@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Cormorant+Garamond&family=Noto+Sans+TC:wght@100&display=swap');
+
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -9,4 +11,63 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+header {
+  background-color: #eed582;
+}
+
+header h1 {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 3rem;
+}
+
+header p {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+article {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 200;
+}
+
+main {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 2rem;
+}
+
+
+main :first-child {
+  grid-column-start: span 2;
+}
+
+main article {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+a {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: black;
+}
+
+footer {
+  background-color: #eed582;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer svg {
+  height: 1rem;
 }
